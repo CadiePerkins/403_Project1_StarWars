@@ -24,8 +24,20 @@ namespace _403_Project1_StarWars.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //add post AddMovie method
+        [HttpPost]
+        public ActionResult AddMovie(SeenMovies myMovies)
+        {
+            myMovies.MovieID = lstMovies.Count() + 1;
+            if (ModelState.IsValid)
+            {
+                lstMovies.Add(myMovies);
+                return RedirectToAction("DisplayMovies");
+            }
+            else
+            {
+                return View(myMovies);
+            }
+        }
 
         //add get and post EditMovie methods
     }
