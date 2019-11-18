@@ -1,0 +1,17 @@
+﻿.cadie {
+    /*Background options:
+    Option 1 (see below)
+    */
+    background-image: url('Images/darth_vader_RogueOne_background.jpg');
+    /*Option 2-- background-image: url('Images/darth_vader_background.jpg');    
+        ^^ I like this image more I think, but need to get it to not repeat itself
+    */
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: slategray;
+}
