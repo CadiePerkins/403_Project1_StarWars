@@ -21,11 +21,24 @@ namespace _403_Project1_StarWars.Controllers
         [HttpGet] //this is the add review get method
         public ActionResult AddReview()
         {
+            ViewBag.Movie = Movies_SeenController.lstMovies; //this will bring in the movies as a dynamic dropdown
             return View();
         }
 
-        //[HttpPost]
-        //add post AddReview method
+        [HttpPost] //this is the add review post method which checks if the info is valid before adding
+        public ActionResult AddReview(MovieReview myReviews)
+        {
+            myReviews.ReviewID = lstReviews.Count() + 1;
+            if (ModelState.IsValid)
+            {
+                lstReviews.Add(myReviews);
+                return RedirectToAction("DisplayReviews");
+            }
+            else
+            {
+                return View(myReviews);
+            }
+        }
 
         //add get and post EditReview methods
     }

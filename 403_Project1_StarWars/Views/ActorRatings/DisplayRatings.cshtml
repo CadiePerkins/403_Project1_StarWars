@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<_403_Project1_StarWars.Models.ActorRating>
 
 @{
-    ViewBag.Title = "DisplayRatings";
+    ViewBag.Title = "Display Ratings";
 }
 
-<h2>DisplayRatings</h2>
+<h2>Actor Ratings</h2>
 
 <p>
     @Html.ActionLink("Add a Rating", "AddRating")
@@ -47,9 +47,13 @@
             @Html.DisplayFor(modelItem => item.MovieTitle)
         </td>
         <td>
-            @Html.ActionLink("Edit", "EditRating", new { /* id=item.PrimaryKey */ }) 
+            @Html.ActionLink("Edit", "EditRating", new { initials=item.ActorCode }) 
         </td>
     </tr>
 }
 
 </table>
+
+<div>
+    @Html.ActionLink("Back to Home", "Index", "Home")
+</div>

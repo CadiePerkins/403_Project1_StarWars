@@ -28,8 +28,7 @@ namespace _403_Project1_StarWars.Models
         public string Rating { get; set; }
 
         [Required] //this will be a dynamic dropdown of the list of movies the user entered in SeenMovies
-        [StringLength(50, ErrorMessage = "Must be under 50 characters long.")]
-        [Display(Name = "First Star Wars Appearance")]
+        [Display(Name = "Film Appears In")]
         public string MovieTitle { get; set; }
     }
 }

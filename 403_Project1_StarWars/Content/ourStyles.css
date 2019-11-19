@@ -1,4 +1,6 @@
-﻿.cadie {
+﻿/*This is our styles sheet*/
+
+.cadie {
     /*Background options:
     Option 1 (see below)
     */
@@ -8,7 +10,7 @@
     */
 }
 
-h2 {
+.starwars {
     color: white;
 }
 

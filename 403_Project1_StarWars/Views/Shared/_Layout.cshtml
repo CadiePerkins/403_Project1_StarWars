@@ -21,7 +21,15 @@
                 @Html.ActionLink("Star Wars", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav"> <!--Our menu items-->
+                    <li>@Html.ActionLink("Movies You've Seen", "DisplayMovies", "Movies_Seen", new { area = "" }, 
+                       new { @class = "nav navbar-nav" })</li>
+                    <li>@Html.ActionLink("Review a Movie", "DisplayReviews", "Movie_Reviews", new { area = "" }, 
+                       new { @class = "nav navbar-nav" })</li>
+                    <li>@Html.ActionLink("Rate an Actor", "DisplayRatings", "ActorRatings", new { area = "" }, 
+                       new { @class = "nav navbar-nav" })</li>
+                    <li>@Html.ActionLink("Favorite Quotes", "DisplayQuotes", "Favorite_Quotes", new { area = "" }, 
+                       new { @class = "nav navbar-nav" })</li>
                 </ul>
             </div>
         </div>

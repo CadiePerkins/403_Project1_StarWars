@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<_403_Project1_StarWars.Models.SeenMovies>
 
 @{
-    ViewBag.Title = "DisplayMovies";
+    ViewBag.Title = "Display Movies";
 }
 
 <h2>Movies You've Seen</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add a Movie", "AddMovie")
 </p>
 <table class="table">
     <tr>
@@ -35,9 +35,12 @@
             @Html.DisplayFor(modelItem => item.MovieType)
         </td>
         <td>
-            @Html.ActionLink("Edit", "EditMovie", new { /* id=item.PrimaryKey */ }) 
+            @Html.ActionLink("Edit", "EditMovie", new { movieCode=item.MovieID }) 
         </td>
     </tr>
 }
 
 </table>
+<div>
+    @Html.ActionLink("Back to Home", "Index", "Home")
+</div>

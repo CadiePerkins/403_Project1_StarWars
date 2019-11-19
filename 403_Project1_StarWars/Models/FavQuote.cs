@@ -21,7 +21,7 @@ namespace _403_Project1_StarWars.Models
         [Display(Name = "Favorite Quote")]
         public string Quote { get; set; }
 
-        [Required] //this will be the character name of whoever said the quote, entered by the user
+        [Required] //this will be the character name of whoever said the quote, entered by the user i.e. Yoda
         [StringLength(20, ErrorMessage = "Must be under 20 characters long.")]
         [Display(Name = "Who Said It")]
         public string CharacterName { get; set; }

@@ -21,11 +21,24 @@ namespace _403_Project1_StarWars.Controllers
         [HttpGet] //this is the add quote get method
         public ActionResult AddQuote()
         {
+            ViewBag.Movies = Movies_SeenController.lstMovies; //this will bring the entered movies over in a dropdown
             return View();
         }
 
-        //[HttpPost] 
-        //add post AddQuote method
+        [HttpPost] //this is the add quote post method which checks if the info is valid before adding
+        public ActionResult AddQuote(FavQuote myQuote)
+        {
+            myQuote.QuoteID = lstQuotes.Count() + 1;
+            if (ModelState.IsValid)
+            {
+                lstQuotes.Add(myQuote);
+                return RedirectToAction("DisplayQuotes");
+            }
+            else
+            {
+                return View(myQuote);
+            }
+        }
 
 
         //add get and post EditQuote methods

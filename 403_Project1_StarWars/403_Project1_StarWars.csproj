@@ -109,10 +109,10 @@
     <Content Include="Views\ActorRatings\AddRating.cshtml" />
     <Content Include="Views\Favorite_Quotes\DisplayQuotes.cshtml" />
     <Content Include="Views\Favorite_Quotes\AddQuote.cshtml" />
-    <Content Include="Views\Movie_Reviews\DisplayReviews.cshtml" />
     <Content Include="Views\Movie_Reviews\AddReview.cshtml" />
     <Content Include="Views\Movies_Seen\DisplayMovies.cshtml" />
     <Content Include="Views\Movies_Seen\AddMovie.cshtml" />
+    <Content Include="Views\Movie_Reviews\DisplayReviews.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -140,6 +140,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Movies_Seen\EditMovie.cshtml" />
+    <Content Include="Views\ActorRatings\EditRating.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
