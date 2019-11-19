@@ -4,13 +4,13 @@
     ViewBag.Title = "Dagobah";
 }
 
-<h2 style="color:white">Favorite Quotes</h2>
+<h2 class="starwars">Favorite Quotes</h2>
 <body class="dagobah"></body>
 <p>
     @Html.ActionLink("Add a Quote", "AddQuote")
 </p>
 <table class="table">
-    <tr style="color:white">
+    <tr class="starwars">
         <th>
             @Html.DisplayNameFor(model => model.QuoteID)
         </th>
@@ -27,7 +27,7 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr style="color:white">
+    <tr class="starwars">
         <td>
             @Html.DisplayFor(modelItem => item.QuoteID)
         </td>

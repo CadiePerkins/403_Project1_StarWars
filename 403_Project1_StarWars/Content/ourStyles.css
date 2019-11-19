@@ -37,3 +37,8 @@ ol {
     background-size: cover;
     background-color:black;
 }
+
+a{
+    color: lightslategray;
+    font-weight:bold;
+}

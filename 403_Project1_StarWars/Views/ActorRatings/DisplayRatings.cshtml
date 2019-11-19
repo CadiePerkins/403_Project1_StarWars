@@ -4,14 +4,14 @@
     ViewBag.Title = "Coruscant";
 }
 
-<h2 style="color:white">Actor Ratings</h2>
+<h2 class="starwars">Actor Ratings</h2>
 
 <body class="coruscant"></body>
 <p>
     @Html.ActionLink("Add a Rating", "AddRating")
 </p>
 <table class="table">
-    <tr style="color:white">
+    <tr class="starwars">
         <th>
             @Html.DisplayNameFor(model => model.ActorCode)
         </th>
@@ -31,7 +31,7 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr style="color:white">
+    <tr class="starwars">
         <td>
             @Html.DisplayFor(modelItem => item.ActorCode)
         </td>
