@@ -20,7 +20,20 @@ ol {
 }
 
 .hoth {
-    background-image: url('Images/Hoth.jpg');
+    background-image: url('Images/Hoth V2.png');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
+}
+
+.dagobah {
+    background-image: url('Images/Dagobah.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.coruscant {
+    background-image: url('Images/Coruscant (2).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:black;
 }

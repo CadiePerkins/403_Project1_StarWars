@@ -50,7 +50,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.MovieTitle, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownListFor(model => model.MovieTitle, new SelectList(ViewBag.Movies, "MovieTitle", "MovieTitle"))
+                @Html.DropDownListFor(model => model.MovieTitle, new SelectList(ViewBag.Movies, "MovieID", "MovieTitle"))
                 <!--Get 'Value Cannot be Null' error for this dropdown-->
                 @Html.ValidationMessageFor(model => model.MovieTitle, "", new { @class = "text-danger" })
             </div>
@@ -65,5 +65,5 @@
 }
 
 <div>
-    @Html.ActionLink("Back to Home", "Index", "Home")
+    @Html.ActionLink("Back to Mustafar", "Index", "Home")
 </div>

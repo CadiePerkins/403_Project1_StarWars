@@ -1,16 +1,17 @@
 ﻿@model IEnumerable<_403_Project1_StarWars.Models.ActorRating>
 
 @{
-    ViewBag.Title = "Kamino";
+    ViewBag.Title = "Coruscant";
 }
 
-<h2>Actor Ratings</h2>
+<h2 style="color:white">Actor Ratings</h2>
 
+<body class="coruscant"></body>
 <p>
     @Html.ActionLink("Add a Rating", "AddRating")
 </p>
 <table class="table">
-    <tr>
+    <tr style="color:white">
         <th>
             @Html.DisplayNameFor(model => model.ActorCode)
         </th>
@@ -30,7 +31,7 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
+    <tr style="color:white">
         <td>
             @Html.DisplayFor(modelItem => item.ActorCode)
         </td>
@@ -55,5 +56,5 @@
 </table>
 
 <div>
-    @Html.ActionLink("Back to Home", "Index", "Home")
+    @Html.ActionLink("Back to Mustafar", "Index", "Home")
 </div>

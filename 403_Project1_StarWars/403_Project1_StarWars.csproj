@@ -92,8 +92,11 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Coruscant %282%29.jpg" />
+    <Content Include="Content\Images\Dagobah.jpg" />
     <Content Include="Content\Images\darth_vader_background.jpg" />
     <Content Include="Content\Images\darth_vader_RogueOne_background.jpg" />
+    <Content Include="Content\Images\Hoth V2.png" />
     <Content Include="Content\Images\Hoth.jpg" />
     <Content Include="Content\Images\Tatooine.png" />
     <Content Include="Content\ourStyles.css" />
@@ -111,7 +114,6 @@
     <Content Include="Views\ActorRatings\AddRating.cshtml" />
     <Content Include="Views\Favorite_Quotes\DisplayQuotes.cshtml" />
     <Content Include="Views\Favorite_Quotes\AddQuote.cshtml" />
-    <Content Include="Views\Movie_Reviews\AddReview.cshtml" />
     <Content Include="Views\Movies_Seen\DisplayMovies.cshtml" />
     <Content Include="Views\Movies_Seen\AddMovie.cshtml" />
     <Content Include="Views\Movie_Reviews\DisplayReviews.cshtml" />
@@ -146,6 +148,7 @@
     <Content Include="Views\ActorRatings\EditRating.cshtml" />
     <Content Include="Views\Movie_Reviews\EditReview.cshtml" />
     <Content Include="Views\Favorite_Quotes\EditQuote.cshtml" />
+    <Content Include="Views\Movie_Reviews\AddReview.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -4,13 +4,13 @@
     ViewBag.Title = "Dagobah";
 }
 
-<h2>Favorite Quotes</h2>
-
+<h2 style="color:white">Favorite Quotes</h2>
+<body class="dagobah"></body>
 <p>
     @Html.ActionLink("Add a Quote", "AddQuote")
 </p>
 <table class="table">
-    <tr>
+    <tr style="color:white">
         <th>
             @Html.DisplayNameFor(model => model.QuoteID)
         </th>
@@ -27,7 +27,7 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
+    <tr style="color:white">
         <td>
             @Html.DisplayFor(modelItem => item.QuoteID)
         </td>
@@ -48,5 +48,5 @@
 
 </table>
 <div>
-    @Html.ActionLink("Back to Home", "Index", "Home")
+    @Html.ActionLink("Back to Mustafar", "Index", "Home")
 </div>

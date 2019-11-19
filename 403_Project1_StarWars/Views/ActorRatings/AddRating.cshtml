@@ -41,7 +41,13 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Rating, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Rating, new { htmlAttributes = new { @class = "form-control" } })
+                <select class="form-control" id="Rating" name="Rating">
+                        <option selected disabled>Choose one</option>
+                        <option value="Great">Great</option>
+                        <option value="Good">Good</option>
+                        <option value="Bad">Bad</option>
+                        <option value="Awful">Awful</option>
+                    </select>
                 @Html.ValidationMessageFor(model => model.Rating, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -49,7 +55,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.MovieTitle, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownListFor(model => model.MovieTitle, new SelectList(ViewBag.Movies, "MovieTitle", "MovieTitle"))
+                @Html.DropDownListFor(model => model.MovieTitle, new SelectList(ViewBag.Movies, "MovieID", "MovieTitle"))
                 @Html.ValidationMessageFor(model => model.MovieTitle, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -63,5 +69,5 @@
 }
 
 <div>
-    @Html.ActionLink("Back to Home", "Index", "Home")
+    @Html.ActionLink("Back to Mustafar", "Index", "Home")
 </div>

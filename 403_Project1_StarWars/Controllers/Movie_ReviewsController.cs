@@ -21,7 +21,7 @@ namespace _403_Project1_StarWars.Controllers
         [HttpGet] //this is the add review get method
         public ActionResult AddReview()
         {
-            ViewBag.Movie = Movies_SeenController.lstMovies; //this will bring in the movies as a dynamic dropdown
+            ViewBag.Movies = Movies_SeenController.lstMovies; //this will bring in the movies as a dynamic dropdown
             return View();
         }
 
