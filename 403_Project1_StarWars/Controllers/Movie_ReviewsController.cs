@@ -28,7 +28,7 @@ namespace _403_Project1_StarWars.Controllers
         [HttpPost] //this is the add review post method which checks if the info is valid before adding
         public ActionResult AddReview(MovieReview myReviews)
         {
-            myReviews.ReviewID = lstReviews.Count() + 1;
+            myReviews.ReviewID = lstReviews.Count() + 1; //autogenerator for count for the ID
             if (ModelState.IsValid)
             {
                 lstReviews.Add(myReviews);
@@ -40,6 +40,26 @@ namespace _403_Project1_StarWars.Controllers
             }
         }
 
-        //add get and post EditReview methods
+        //the get and post EditReview methods
+        [HttpGet]
+        public ActionResult EditReview(int iReview)
+        {
+            MovieReview oReview = lstReviews.Find(x => x.ReviewID == iReview);
+
+            return View(oReview);
+        }
+
+        [HttpPost]
+        public ActionResult EditReview(MovieReview myModel) 
+        {
+            var obj = lstReviews.FirstOrDefault(x => x.ReviewID == myModel.ReviewID);
+            if (obj != null)
+            {
+                obj.Review = myModel.Review;
+                obj.MovieTitle = myModel.MovieTitle;
+            }
+
+            return View("DisplayReviews", lstReviews);
+        }
     }
 }

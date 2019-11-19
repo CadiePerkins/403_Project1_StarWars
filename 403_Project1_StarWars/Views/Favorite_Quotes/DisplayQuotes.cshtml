@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<_403_Project1_StarWars.Models.FavQuote>
 
 @{
-    ViewBag.Title = "DisplayQuotes";
+    ViewBag.Title = "Display Quotes";
 }
 
 <h2>Favorite Quotes</h2>
@@ -41,7 +41,7 @@
             @Html.DisplayFor(modelItem => item.CharacterName)
         </td>
         <td>
-            @Html.ActionLink("Edit", "EditQuote", new { /* id=item.PrimaryKey */ }) 
+            @Html.ActionLink("Edit", "EditQuote", new { iQuote=item.QuoteID  }) 
         </td>
     </tr>
 }

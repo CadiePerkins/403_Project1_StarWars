@@ -1,19 +1,13 @@
 ﻿/*This is our styles sheet*/
 
 .cadie {
-    /*Background options:
-    Option 1 (see below)
-    */
-    background-image: url('Images/darth_vader_RogueOne_background.jpg');
-    /*Option 2-- background-image: url('Images/darth_vader_background.jpg');    
-        ^^ I like this image more I think, but need to get it to not repeat itself
-    */
+    /*background-image: url('Images/darth_vader_RogueOne_background.jpg');*/
+    background-image: url('Images/darth_vader_background.jpg');    
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 .starwars {
     color: white;
 }
 
-p {
-    color: slategray;
-}

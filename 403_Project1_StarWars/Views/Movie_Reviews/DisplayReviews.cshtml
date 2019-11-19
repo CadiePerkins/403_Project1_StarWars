@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<_403_Project1_StarWars.Models.MovieReview>
 
 @{
-    ViewBag.Title = "DisplayReviews";
+    ViewBag.Title = "Display Reviews";
 }
 
 <h2>Movie Reviews</h2>
@@ -35,7 +35,7 @@
             @Html.DisplayFor(modelItem => item.Review)
         </td>
         <td>
-            @Html.ActionLink("Edit", "EditReview", new { /* id=item.PrimaryKey */ }) 
+            @Html.ActionLink("Edit", "EditReview", new { iReview=item.ReviewID }) 
         </td>
     </tr>
 }
