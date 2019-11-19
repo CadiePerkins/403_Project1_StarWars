@@ -51,7 +51,7 @@ namespace _403_Project1_StarWars.Controllers
         }
 
         [HttpPost]
-        public ActionResult EditMovie(SeenMovies myModel) //THIS CURRENTLY DOESN'T SAVE EDITS
+        public ActionResult EditMovie(SeenMovies myModel) //THIS CURRENTLY DOESN'T SAVE EDITS CUZ HAS PERMANENT MOVIEID OF 0??
         {
             var obj = lstMovies.FirstOrDefault(x => x.MovieID == myModel.MovieID);
             if (obj != null)

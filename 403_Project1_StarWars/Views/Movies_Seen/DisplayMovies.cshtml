@@ -12,7 +12,7 @@
     @Html.ActionLink("Add a Movie", "AddMovie")
 </p>
 <table class="table">
-    <tr>
+    <tr class="starwars">
         <th>
             @Html.DisplayNameFor(model => model.MovieID)
         </th>
@@ -26,7 +26,7 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
+    <tr class="starwars">
         <td>
             @Html.DisplayFor(modelItem => item.MovieID)
         </td>
@@ -37,7 +37,7 @@
             @Html.DisplayFor(modelItem => item.MovieType)
         </td>
         <td>
-            @Html.ActionLink("Edit", "EditMovie", new { movieCode=item.MovieID }) 
+            @Html.ActionLink("Edit", "EditMovie", new { movieCode=item.MovieID })
         </td>
     </tr>
 }
