@@ -1,6 +1,6 @@
 ﻿/*This is our styles sheet*/
 
-.cadie {
+.vader {
     /*background-image: url('Images/darth_vader_RogueOne_background.jpg');*/
     background-image: url('Images/darth_vader_background.jpg');    
     background-repeat:no-repeat;
@@ -13,4 +13,14 @@
 
 ol {
     color: darkgray;
+}
+
+.tatooine {
+    background-image: url('Images/Tatooine.png');
+}
+
+.hoth {
+    background-image: url('Images/Hoth.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
 }

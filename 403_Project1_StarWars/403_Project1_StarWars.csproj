@@ -94,6 +94,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\darth_vader_background.jpg" />
     <Content Include="Content\Images\darth_vader_RogueOne_background.jpg" />
+    <Content Include="Content\Images\Hoth.jpg" />
+    <Content Include="Content\Images\Tatooine.png" />
     <Content Include="Content\ourStyles.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
